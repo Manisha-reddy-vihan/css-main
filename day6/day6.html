@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+       body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .container {
+            border: 9px solid black;
+            height: 70vh;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 11%;
+            background-color: #f7f7f8;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: hsl(130, 86%, 20%);
+            padding: 10px 15px;
+            color: white;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 20;
+            border-radius: 11% 11% 0 0;
+            box-sizing: border-box;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .profile span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icons img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .chat-container {
+            margin-top: 70px; /* Space for the fixed header */
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 0 10px;
+            scrollbar-width: none;
+        }
+
+        .date {
+            font-size: 14px;
+            color: rgb(26, 24, 24);
+            text-align: center;
+            position: sticky;
+            top: 10px; /* Sticks under the header */
+            background-color: rgb(237, 243, 248);
+            padding: 5px 0;
+            margin: 5px 0;
+            z-index: 10;
+            border-bottom: 1px solid lightgray;
+        }
+
+        .chat {
+            margin-top: 10px;
+        }
+
+        .left,
+        .right {
+            margin-bottom: 15px;
+            word-wrap: break-word;
+            max-width: 100%; /* Ensure messages don't span too wide */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .left {
+            background-color: #ffffff;
+            border: 1px solid #e6e6e6;
+            text-align: left;
+            margin-left: 10px;
+            
+        }
+
+        .right {
+            background-color: #dcf8c6;
+            border: 1px solid #c8e6c9;
+            text-align: right;
+            margin-right: 10px;
+           
+        }
+
+        .footer {
+            position: fixed;
+    width: 25%;
+    height: 50px;
+    top: 75%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #f7f7f8;;
+    padding: 2px;
+    bottom: 0;
+           
+        }
+
+        .footer input {
+            width: 90px;
+    height: auto;
+    background-color: rgb(243, 243, 223);
+    border: none;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 6px;
+    border-radius: 30px;
+        }
+
+        .footer i {
+            font-size: 20px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .footer .bi-mic {
+            background-color: rgb(26, 142, 26);
+            border-radius: 50%;
+            color: white;
+            padding: 5px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                height: 80vh;
+                border-radius: 8%;
+            }
+
+            .header {
+                padding: 8px 12px;
+            }
+
+            .profile span {
+                font-size: 14px;
+            }
+            ::-webkit-scrollbar {
+width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+               
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="https://img.freepik.com/free-vector/illustration-user-avatar-icon_53876-5908.jpg" alt="Profile">
+                <span>NIKHILA</span>
+            </div>
+            <div class="icons">
+                <img src="https://img.freepik.com/premium-vector/video-call-icon-vector-illustration-video-chat-icon-vector_654297-124.jpg?w=360" alt="Video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdF8rStpNfreSUcA9OEDXUhxKUsduShSc5pxO-w9G9HnDdjl1iG7FeD4VbPcOSNd192V0&usqp=CAU" alt="Call">
+                <img src="https://w7.pngwing.com/pngs/183/20/png-transparent-three-dots-zondicons-icon.png" alt="Menu">
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <!-- 25th July -->
+            <div class="date">
+                <span>25 July</span>
+            </div>
+            <div class="chat">
+                <div class="left">
+                    <p>Hello busy kid</p>
+                </div>
+                <div class="left">
+                    <p>Sup!!</p>
+                </div>
+                <div class="right">
+                    <p>Nothing much in flight</p>
+                </div>
+                <div class="right">
+                    <p>Eating yumm food<br>WBU??</p>
+                </div>
+                <div class="left">
+                    <p>US student finally</p>
+                </div>
+                <div class="left">
+                    <p>Nothing beats the Indian samosa Having it!!!</p>
+                </div>
+                <div class="right">
+                    <p>Ughhh<br>Don't remind me, I'm starving goddddddd</p>
+                </div>
+                <div class="right">
+                    <p>Anyway's open your snap<br>I have sent you something</p>
+                </div>
+                <div class="left">
+                    <p>Wait a second I'll check it.</p>
+                </div>
+                <div class="left">
+                    <p>Ughh good old days. Now I'm gonna miss you so much</p>
+                </div>
+                <div class="right">
+                    <p>Ikr!!! Even I too 😔</p>
+                </div>
+                <div class="right">
+                    <p>Good old days we use to roam so much. I miss my scooty too</p>
+                </div>
+                <div class="right">
+                    <p>Adulthood hits hard!!!</p>
+                </div>
+                <div class="left">
+                    <p>Everything is gonna change<br>But not our bond 🥺🥺</p>
+                </div>
+
+                <!-- 26th July -->
+                <div class="date">
+                    <span>26 July</span>
+                </div>
+                <div class="left">
+                    <p>You know what</p>
+                </div>
+                <div class="left">
+                    <p>I have changed your number to US Bidda</p>
+                </div>
+                <div class="left">
+                    <p>😜😂😂</p>
+                </div>
+                <div class="right">
+                    <p>Bane extraluuu ......</p>
+                </div>
+                <div class="right">
+                    <p>What about Meghana??</p>
+                </div>
+                <div class="right">
+                    <p>What is she doing no calls</p>
+                </div>
+                <div class="left">
+                    <p>Last month she attended Tech Mahindra interview</p>
+                </div>
+                <div class="left">
+                    <p>She went till HR round</p>
+                </div>
+                <div class="left">
+                    <p>I think she'll get selected</p>
+                </div>
+                <div class="right">
+                    <p>WOAH!!! So happy for her</p>
+                </div>
+                <div class="right">
+                    <p>Finally one of us got a job</p>
+                </div>
+                <div class="right">
+                    <p>Don't worry you'll get one soon</p>
+                </div>
+                <div class="right">
+                    <p>🤞🤞🤞</p>
+                </div>
+                <!-- 27th july -->
+                <div class="date">
+                    <span>27 July</span>
+                </div>
+                 <div class="right">
+                <p>Hello busy kid</p>
+            </div>
+            <div class="left">
+                <p>Sup!!</p>
+            </div>
+            <div class="right">
+                <p>Nothing much in flight</p>
+            </div>
+            <div class="right">
+                <p>Eating yumm food<br>WBU??</p>
+            </div>
+            <div class="left">
+                <p>US student finally</p>
+            </div>
+            <div class="right">
+                <p>😤😤😤😤</p>
+            </div>
+            <div class="left">
+                <p>Part-time???</p>
+            </div>
+            <div class="right">
+                <p>Going now</p>
+            </div>
+            <div class="left">
+                <p>Enjoy</p>
+            </div>
+            <div class="date">
+                <span>28 July</span>
+            </div>
+            <div class="right">
+                <p>It's like eating</p>
+            </div>
+            <div class="right">
+                <p>sleeping</p>
+            </div>
+                <div class="right">
+                <p>Partime</p>
+            </div>
+            <div class="left">
+                <p>😆😂😂</p>
+            </div>
+            <div class="right">
+                <p>Laughing??</p>
+            </div>
+            <div class="right">
+                <p>Bye</p>
+            </div>
+            <div class="left">
+                <p>👋👋👋</p>
+            </div>
+
+
+            
+            </div>
+        </div>
+    </div>
+    <div input="" class="footer">
+                <input type="text" style="position: relative; padding-left: 40px; padding-right: 120px;">
+                <i class="bi bi-sticky" style="position: absolute; left: 30px; bottom: 10px"></i>
+                <i class="bi bi-paperclip" style="position: absolute; left: 160px; bottom: 10px;"></i>
+                <i class="bi bi-currency-rupee" style="position: absolute; left: 190px; bottom: 10px;"></i>
+                <i class="bi bi-camera" style="position: absolute; left: 220px; bottom: 10px;"></i>
+                <i class="bi bi-mic" style="background-color: rgb(26, 142, 26); border-radius: 100%; padding: 5px; color: white;"></i>
+            </div>
+</body>
+</html>

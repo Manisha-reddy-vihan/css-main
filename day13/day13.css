@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+div{
+width: 100%;
+height: 100vh;
+background-attachment: fixed;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: 95% 95%;
+    padding: 0 10%;
+    background-repeat: no-repeat;
+    
+}
+.container2{
+    background-image: url(https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc);
+}
+.container3{
+    background-image: url(https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU);
+}
+.container4{
+    background-image: url(https://quintagroup.com/cms/js/js-image/javascript-logo.png);
+}
+.container5{
+    background-image: url(https://www.k2bindia.com/wp-content/uploads/2013/03/bootstrap-1.jpg);
+}
+.container6{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png);
+}
+.container7{
+    background-image: url(https://miro.medium.com/v2/resize:fit:500/1*CPDIH8BWrGipHRJ6o6E2Vw.png);
+}
+.container8{
+    background-image: url(https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/AVvXsEhKnMpHHkukLTOmgb1piySSgo9He.2e16d0ba.fill-1200x600.jpg);
+}
+.container9{
+    background-image: url(https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230202143636/NEXT-js-tutorial-1.png);
+}
+.container11{
+   background-image: url(https://blog.theodo.com/_astro/ts_logo.BstCNrTU_1Dbxpr.webp); 
+}
+.container12{
+    background-image: url(https://cdn.shopaccino.com/igmguru/articles/What-Is-React-Native.png?v=491); 
+ }
+ .container13{
+    background-image: url(https://www.jrebel.com/sites/default/files/image/2020-05/image-blog-revel-top-java-tools.jpg); 
+ }
+ .container14{
+    background-image: url(https://www.devopsschool.com/blog/wp-content/uploads/2022/03/php-programming-language.jpg);
+ }
+ .container15{
+    background-image: url(https://images.ctfassets.net/aq13lwl6616q/7cS8gBoWulxkWNWEm0FspJ/c7eb42dd82e27279307f8b9fc9b136fa/nodejs_cover_photo_smaller_size.png);
+ }
+ .container16{
+    background-image: url(https://beecrowd.com/wp-content/uploads/2024/04/2022-07-19-Melhores-cursos-de-Python.jpg);
+ }
+ .container17{
+    background-image: url(https://www.rlogical.com/wp-content/uploads/2020/12/MERN.webp);
+ }
+ .container18{
+    background-image: url(https://repository-images.githubusercontent.com/3432266/7e79bf80-7aa6-11eb-9cbd-d7bda7eaf1aa);
+ }

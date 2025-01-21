@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+            background-color: red;
+        }
+        .nn{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 70vh;
+          width: 50%;
+         
+          
+        }
+        .ball1{
+            height: 9vh;
+            width: 5vw;
+            margin: 20px;
+          border-radius:50%;
+          background-color: #ff6;
+          animation: ball 2s infinite;
+            animation-delay: 0.2s;
+        }
+        .ball2{
+            height: 9vh;
+            width: 5vw;
+            margin: 20px;
+          border-radius:50%;
+          background-color: #ff6;
+          animation: ball 2s infinite;
+            animation-delay: 0.4s;
+        }
+        .ball3{
+            height: 9vh;
+            width: 5vw;
+            margin: 20px;
+          border-radius:50%;
+          background-color: #ff6;
+          animation:ball 2s infinite;
+        animation-delay: 0.6s;
+        }
+        .nd{
+          display: flex;
+
+        }
+        .small1{
+          height:20px;
+          width: 20px;
+          margin:5px;
+          border-radius: 50%;
+          top:350px;
+          left:450px;
+          background-color: lightgreen;
+          animation: sm 1s infinite ;
+          animation-delay: 0.6s;
+        }.ball3{
+            height: 9vh;
+            width: 5vw;
+            margin: 20px;
+          border-radius:50%;
+          background-color: #ff6;
+          animation:ball 2s infinite;
+        animation-delay: 0.6s;
+        }
+        .nd{
+          display: flex;
+
+        }
+        .small1{
+          height:20px;
+          width: 20px;
+          margin:5px;
+          border-radius: 50%;
+          top:350px;
+          left:450px;
+          background-color: lightgreen;
+          animation: sm 1s infinite ;
+          animation-delay: 0.6s;
+        }
+        .small2{
+          height:20px;
+          width: 20px;
+          margin:5px;
+          border-radius: 50%;
+          top:350px;
+          left:450px;
+          background-color: lightgreen;
+          animation: sm 1s infinite ;
+          animation-delay:0.8s;
+        }
+        .small3{
+          height:20px;
+          width: 20px;
+          margin:5px;
+          border-radius: 50%;
+          top:350px;
+          left:450px;
+          background-color: lightgreen;
+          animation: sm 1s infinite ;
+          animation-delay: 1s;
+        }
+        @keyframes ball {  
+          0%{
+            transform: translate(0px , 5px);
+            top:0px;
+          }
+          50%{
+            top:300px;
+            transform: translate(0px , 200px);
+          }
+          100%{
+            top:0px;
+          }
+        }
+        @keyframes sm {
+          0%{
+            transform: scale(1);
+          }
+          50%{
+           transform: scale(1.5);
+          }
+          100%{
+           transform: scale(1);
+          }
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="nn">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        </div>
+    </div>
+    <div class="nd">
+        <div class="small1"></div>
+        <div class="small2"></div>
+        <div class="small3"></div>
+        </div>
+    </div>
+</body>
+</html>
